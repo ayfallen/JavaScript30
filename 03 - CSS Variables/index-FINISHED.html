@@ -6,6 +6,7 @@
 	<style>
 		:root {
 			--spacing: 0px;
+			--radius: 0px;
 			--blur: 0px;
 			--base: #ffc600;
 			--ratio: 1;
@@ -14,6 +15,7 @@
 		img {
 			padding: var(--spacing) calc(var(--spacing) * var(--ratio)) var(--spacing);
 			filter: blur(var(--blur));
+			border-radius: var(--radius);
 			background: var(--base);
 		}
 
@@ -63,6 +65,9 @@
 
 	<label for="blur">Blur:</label>
 	<input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+
+	<label for="blur">Round:</label>
+	<input id="radius" type="range" name="radius" min="0" max="50" value="0" data-sizing="px">
 
 	<label for="base">Base Color</label>
 	<input id="base" type="color" name="base" value="#ffc600">
